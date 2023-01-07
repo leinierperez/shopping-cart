@@ -12,6 +12,7 @@ import voidStaff from '../assets/product-images/void-staff.webp';
 export const products = [
   {
     name: 'Dark Seal',
+    id: 1,
     price: 350,
     image: darkSeal,
     description:
@@ -19,6 +20,7 @@ export const products = [
   },
   {
     name: `Death's Dance`,
+    id: 2,
     price: 3300,
     image: deathsDance,
     description:
@@ -26,12 +28,14 @@ export const products = [
   },
   {
     name: `Doran's Ring`,
+    id: 3,
     price: 400,
     image: doransRing,
     description: `This ring will make the user deal 5 AD on-hit damage against Minions and restore 1.25 of their mana over 10 seconds when they damage a Champion. If the user can't get mana or their mana bar is full, it will heal they 50% of those values—a great item for those Champions that needs mana-sustain stats.`,
   },
   {
     name: 'Galeforce',
+    id: 4,
     price: 3400,
     image: galeforce,
     description:
@@ -39,6 +43,7 @@ export const products = [
   },
   {
     name: 'Horizon Focus',
+    id: 5,
     price: 3000,
     image: horizonFocus,
     description:
@@ -46,18 +51,21 @@ export const products = [
   },
   {
     name: `Liandry's Anguish`,
+    id: 6,
     price: 3200,
     image: liandrysAnguish,
     description: `The Magician Mid and Top Laners usually use this item because of the burning damage it causes (the more AP the user has, the more damage this item deals) and the mana it grants. Also, it's great for Champs like Lux as its mythic passive grants 5 Ability Haste to the other Legendary items.`,
   },
   {
     name: 'Night Harvester',
+    id: 7,
     price: 3200,
     image: nightHarvester,
     description: `This one is for AP Assassins, like Diana. It will deal more magic damage for every ability or basic attack landed on an enemy Champion—also, this item's mythic passive grants the other items 5 Ability Haste.`,
   },
   {
     name: 'Randuins Omen',
+    id: 8,
     price: 2700,
     image: randuinsOmen,
     description:
@@ -65,6 +73,7 @@ export const products = [
   },
   {
     name: 'The Collector',
+    id: 9,
     price: 3000,
     image: theCollector,
     description:
@@ -72,6 +81,7 @@ export const products = [
   },
   {
     name: 'Void Staff',
+    id: 10,
     price: 2800,
     image: voidStaff,
     description: `Great item for when enemies build magic resistance. Void Staff's magic penetration becomes more effective as the target's magic resistance increases.`,
