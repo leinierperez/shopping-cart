@@ -1,6 +1,6 @@
-import darkSeal from '../assets/product-images/Dark-Seal.webp';
+import runaansHurricane from '../assets/product-images/runaans-hurricane.webp';
 import deathsDance from '../assets/product-images/deaths-dance.webp';
-import doransRing from '../assets/product-images/Dorans-Ring.webp';
+import witsEnd from '../assets/product-images/wits-end.webp';
 import galeforce from '../assets/product-images/galeforce.webp';
 import horizonFocus from '../assets/product-images/horizon-focus.webp';
 import liandrysAnguish from '../assets/product-images/liandrys-anguish.webp';
@@ -8,15 +8,16 @@ import nightHarvester from '../assets/product-images/night-harvester.webp';
 import randuinsOmen from '../assets/product-images/randuins-omen.webp';
 import theCollector from '../assets/product-images/the-collector.webp';
 import voidStaff from '../assets/product-images/void-staff.webp';
+import eclipse from '../assets/product-images/eclipse.webp';
+import shieldbow from '../assets/product-images/immortal-shieldbow.webp';
 
 export const products = [
   {
-    name: 'Dark Seal',
+    name: `Runaan's Hurricane`,
     id: 1,
-    price: 350,
-    image: darkSeal,
-    description:
-      'The Dark Seal has a stack system named Glory, which will give the user two stacks per Champion kill and 1 per assist, up to 10 stacks. Every Glory stack will give the user 4 AP points. Great item for Magicians in the Mid Lane.',
+    price: 2600,
+    image: runaansHurricane,
+    description: `Only Ranged Champs can buy this one, and it will apply small basic attacks that will deal only a percentage of the user's AD every time the user makes a basic attack.`,
   },
   {
     name: `Death's Dance`,
@@ -27,11 +28,12 @@ export const products = [
       'This is another item for Brawlers, which helps the user handle more while in team fights. It stores 30% of the damage received (10% if you have a ranged Champ), whether physical or magical damage. Then, it will start inflicting it as true damage over 3 seconds, but if the user kills the Champ who dealt them damage and activated the bleeding, the user will get a big amount of HP.',
   },
   {
-    name: `Doran's Ring`,
+    name: `Wit's End`,
     id: 3,
-    price: 400,
-    image: doransRing,
-    description: `This ring will make the user deal 5 AD on-hit damage against Minions and restore 1.25 of their mana over 10 seconds when they damage a Champion. If the user can't get mana or their mana bar is full, it will heal they 50% of those values—a great item for those Champions that needs mana-sustain stats.`,
+    price: 3100,
+    image: witsEnd,
+    description:
+      'A good item for Brawlers that need to counter AP-based threats.',
   },
   {
     name: 'Galeforce',
@@ -85,5 +87,19 @@ export const products = [
     price: 2800,
     image: voidStaff,
     description: `Great item for when enemies build magic resistance. Void Staff's magic penetration becomes more effective as the target's magic resistance increases.`,
+  },
+  {
+    name: 'Eclipse',
+    id: 11,
+    price: 3100,
+    image: eclipse,
+    description: `This is another item for Assassins, but I always recommend this one for those Champs that constantly use combos to get into a duel and need some extra armor penetration to secure more damage against Tanks.`,
+  },
+  {
+    name: 'Immortal Shieldbow',
+    id: 12,
+    price: 3400,
+    image: shieldbow,
+    description: `This item gives the user a shield when they get below 30% of their maximum HP, and it's the most common mythic item for the ADCs as it grants a lot of sustain for the Late Game because of the shield. `,
   },
 ];
