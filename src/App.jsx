@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,9 +22,16 @@ const router = createBrowserRouter(
     </Route>
   )
 );
+import CartContext from './CartContext';
 
 function App() {
-  return <RouterProvider router={router} />;
+  const [cart, setCart] = useState([]);
+
+  return (
+    <CartContext.Provider value={{ cart, setCart }}>
+      <RouterProvider router={router} />
+    </CartContext.Provider>
+  );
 }
 
 export default App;
