@@ -27,8 +27,19 @@ import CartContext from './CartContext';
 function App() {
   const [cart, setCart] = useState([]);
 
+  const addToCart = (item) => {
+    const index = cart.findIndex((product) => product.id == item.id);
+    if (index > -1) {
+      const newCart = [...cart];
+      newCart[index].count++;
+      setCart(newCart);
+    } else {
+      setCart((prevCart) => [...prevCart, item]);
+    }
+  };
+
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
+    <CartContext.Provider value={{ cart, setCart, addToCart }}>
       <RouterProvider router={router} />
     </CartContext.Provider>
   );
