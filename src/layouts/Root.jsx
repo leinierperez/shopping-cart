@@ -5,7 +5,6 @@ import CartContext from '../CartContext';
 
 export default function Root() {
   const { cart } = useContext(CartContext);
-  const cartSize = [...new Set(cart.map((product) => product.name))].length;
 
   return (
     <div className="text-white">
@@ -19,7 +18,7 @@ export default function Root() {
           <div className="flex items-center gap-8">
             <Link to="/">Home</Link>
             <Link to="shop">Shop</Link>
-            <Link to="cart">Cart ({cartSize})</Link>
+            <Link to="cart">Cart ({cart.length})</Link>
           </div>
         </nav>
       </header>
