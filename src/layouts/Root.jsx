@@ -9,7 +9,7 @@ export default function Root() {
   return (
     <div className="text-white">
       <header className="bg-gray-900 text-2xl font-semibold">
-        <nav className="mx-auto flex max-w-4xl justify-between py-4 px-6">
+        <nav className="mx-auto flex max-w-screen-xl justify-between py-4 px-6">
           <div>
             <Link to="/">
               <h1>Shopping Cart</h1>
