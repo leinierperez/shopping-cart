@@ -22,8 +22,9 @@ export default function Root() {
           </div>
         </nav>
       </header>
-
-      <Outlet />
+      <main className="mx-auto max-w-screen-xl">
+        <Outlet />
+      </main>
     </div>
   );
 }
