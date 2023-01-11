@@ -38,8 +38,21 @@ function App() {
     }
   };
 
+  const removeFromCart = (id) => {
+    const index = cart.findIndex((product) => product.id == id);
+    if (index > -1) {
+      const newCart = [...cart];
+      if (newCart[index].count === 1) {
+        newCart.splice(index, 1);
+      } else {
+        newCart[index].count--;
+      }
+      setCart(newCart);
+    }
+  };
+
   return (
-    <CartContext.Provider value={{ cart, setCart, addToCart }}>
+    <CartContext.Provider value={{ cart, setCart, addToCart, removeFromCart }}>
       <RouterProvider router={router} />
     </CartContext.Provider>
   );

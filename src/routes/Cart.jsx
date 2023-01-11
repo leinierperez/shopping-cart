@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import CartContext from '../CartContext';
 
 function Cart() {
-  const { cart } = useContext(CartContext);
+  const { cart, addToCart, removeFromCart } = useContext(CartContext);
   const subTotal = cart.reduce((acc, curr) => {
     return acc + curr.price * curr.count;
   }, 0);
@@ -26,7 +26,10 @@ function Cart() {
                 <div className="flex w-full flex-col items-center gap-2">
                   <h2 className="text-xl font-semibold">{name}</h2>
                   <div className="flex items-center gap-3">
-                    <button className="h-6 w-6 rounded-full bg-gray-900">
+                    <button
+                      className="h-6 w-6 rounded-full bg-gray-900"
+                      onClick={() => removeFromCart(id)}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -42,7 +45,12 @@ function Cart() {
                       </svg>
                     </button>
                     <p className="text-xl">{count}</p>
-                    <button className="h-6 w-6 rounded-full bg-gray-900">
+                    <button
+                      className="h-6 w-6 rounded-full bg-gray-900"
+                      onClick={() =>
+                        addToCart({ name, id, price, image, count })
+                      }
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
