@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import CartContext from '../CartContext';
 
 function Cart() {
-  const { cart, addToCart, removeFromCart } = useContext(CartContext);
+  const { cart, addToCart, removeFromCart, setCart } = useContext(CartContext);
   const subTotal = cart.reduce((acc, curr) => {
     return acc + curr.price * curr.count;
   }, 0);
@@ -72,7 +72,10 @@ function Cart() {
             );
           })}
           <div className="flex w-full justify-between">
-            <button className="rounded-md bg-gray-900 p-2 shadow-sm shadow-gray-500">
+            <button
+              className="rounded-md bg-gray-900 p-2 shadow-sm shadow-gray-500"
+              onClick={() => setCart([])}
+            >
               Checkout
             </button>
             <div className="flex gap-4 rounded-md bg-gray-600 py-2 px-4">
