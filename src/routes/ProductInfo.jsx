@@ -13,7 +13,7 @@ function ProductInfo() {
   );
 
   return (
-    <div className="mt-14 flex flex-col px-4 md:flex-row">
+    <div className="mx-auto mt-14 flex max-w-screen-xl flex-col px-4 md:flex-row">
       <img className="max-w-md rounded-md" src={image} alt={`${name} Image`} />
       <div className="md: mt-2 flex flex-col gap-4 px-4">
         <h2 className="text-2xl font-semibold">{name}</h2>
