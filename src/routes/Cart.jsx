@@ -80,7 +80,7 @@ function Cart() {
             </button>
             <div className="flex gap-4 rounded-md bg-gray-600 py-2 px-4">
               <h3 className="">Subtotal</h3>
-              <p className="font-bold">{subTotal}</p>
+              <p className="font-bold">${subTotal}</p>
             </div>
           </div>
         </div>

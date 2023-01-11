@@ -9,7 +9,7 @@ function Product({ name, price, image, id }) {
     >
       <img className="" src={image} alt={`${name} Image`} />
       <h2 className="text-2xl font-semibold">{name}</h2>
-      <p className="text-xl">$ {price}</p>
+      <p className="text-xl">${price}</p>
     </Link>
   );
 }
