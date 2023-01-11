@@ -8,7 +8,7 @@ export default function Root() {
 
   return (
     <div className="text-white">
-      <header className="bg-gray-900 text-2xl font-semibold">
+      <header className="sticky top-0 bg-gray-900 text-2xl font-semibold">
         <nav className="mx-auto flex max-w-screen-xl justify-between py-4 px-6">
           <div>
             <Link to="/">
